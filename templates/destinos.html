@@ -1,0 +1,115 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+
+
+{% block title %}You Trip, Our Trip - Destinos{% endblock %}
+
+
+{% block content %}
+
+<div class="main">
+  <div class="destinos">
+    <span class="spandestino">Destinos Increíbles</span>
+  </div>
+
+  <h3>Conoce nuestros paquetes con promociones imperdibles</h3>
+
+  <div class="wrap-destinos">
+    <div class="tarjetaDestino">
+      <img src="{% static './Img/banner/roma.jpg' %}" alt="Roma">
+      <h3>ROMA</h3>
+      <div class="roma">
+        <p>Vive la experiencia de cononocer Roma y sus maravillosas obras arquitectónicas que te dejarán sin aliento.
+        </p>
+        <br>
+        <p class="regalo">Obtené $50.000 de regalo</p>
+        <p>Disfruta de 8 días y 7 noches
+          <br>
+          <strong>TODO INCLUÍDO!</strong>
+        </p>
+      </div>
+      <div class="rating-holder">
+        <div>
+          <p>Ingresá el cupón</p>
+        </div>
+      </div>
+      <p><a href="#"><button class="btnCir">TRIP-DESTINOROMA</button></a></p>
+    </div>
+
+    <div class="tarjetaDestino">
+      <img src="{% static './Img/banner/Janeiro.png' %}" alt="Rio de Janeiro">
+      <h3>RIO DE JANEIRO</h3>
+      <div class="janeiro">
+        <p>Disfruta toda la magia con este maravilloso paquete exclusivo. Sus playas harán que vivas días de
+          ensueño.</p>
+        <br>
+        <p class="regalo">Obtené $30.000 de regalo</p>
+        <p>Disfruta de 10 días y 9 noches
+          <br>
+          <strong>TODO INCLUÍDO!</strong>
+        </p>
+      </div>
+      <div class="rating-holder">
+        <div>
+          <p>Ingresá el cupón</p>
+        </div>
+      </div>
+      <p><a href="#"><button class="btnCir">TRIP-DESTINORIO</button></a></p>
+    </div>
+
+    <div class="tarjetaDestino">
+      <img src="{% static './Img/banner/madridb.jpg' %}" alt="Madrid">
+      <h3>MADRID</h3>
+      <div class="madrid">
+        <p>La ciudad de Madrid te envolverá con su encanto. Recorre sus puntos más importantes.</p>
+        <br><br>
+        <p class="regalo">Obtené $20.000 de regalo</p>
+        <p>Disfruta de 6 días y 5 noches
+          <br>
+          <strong>TODO INCLUÍDO!</strong>
+        </p>
+      </div>
+      <div class="rating-holder">
+        <div>
+          <p>Ingresá el cupón</p>
+        </div>
+      </div>
+      <p><a href="#"><button class="btnCir">TRIP-DESTINOMAD</button></a></p>
+    </div>
+
+    <div class="tarjetaDestino">
+      <img src="{% static './Img/banner/egipto.jpg' %}" alt="egipto">
+      <h3>EGIPTO</h3>
+      <div class="egipto">
+        <p>Llegó el momento de expandir tu cultura gracias al impresionante patrimonio histórico-artístico del Antiguo
+          Egipto</p>
+        <br>
+        <p class="regalo">Obtené $20.000 de regalo</p>
+        <p>Disfruta de 7 dias y 6 noches
+          <br>
+          <strong>TODO INCLUÍDO!</strong>
+        </p>
+      </div>
+      <div class="rating-holder">
+        <div>
+          <p>Ingresá el cupón</p>
+        </div>
+      </div>
+      <p><a href="#"><button class="btnCir">TRIP-DESTINOEGIP</button></a></p>
+    </div>
+  </div>
+</div>
+
+<aside class="sidebarDTop">
+  <div class="formdiv">
+    <iframe
+      style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc"
+      src="https://dolarhoy.com/i/cotizaciones/dolar-blue" frameborder="0"></iframe>
+  </div>
+</aside>
+
+{% endblock %}
+
+{% block footerjs %}
+
+{% endblock %}

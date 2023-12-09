@@ -1,0 +1,64 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+
+
+
+{% block title %} <title>You Trip, Our Trip - Destinos</title>{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="main">
+  <div class="destinos">
+    <span class="spandestino">Destinos Increíbles</span>
+  </div>
+
+  <h3>Conoce nuestros paquetes con promociones imperdibles</h3>
+
+
+
+
+  <div class="wrap-destinos">
+
+    {% csrf_token %}
+    {% for destino in destinos %}
+
+    <div class="tarjetaDestino">
+      <img src="{{ destino.imagen.url }}" alt="{{ destino.destino }}" >
+      <h3>{{ destino.destino }} </h3>
+      <div class="roma">
+        <p>{{ destino.detalle }}</p>
+        <br>
+        <p class="regalo">Obtené $ {{ destino.premio }} de regalo</p>
+        <p>{{ destino.detalle_dias }}
+          <br>
+          <strong>{{ destino.cobertura }}</strong>
+        </p>
+      </div>
+      <div class="rating-holder">
+        <div>
+          <p>Ingresá el cupón</p>
+        </div>
+      </div>
+      <p><a href="#"><button class="btnCir">TRIP-DESTINOROMA</button></a></p>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+<aside class="sidebarDTop">
+  <div class="formdiv">
+    <iframe
+      style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc"
+      src="https://dolarhoy.com/i/cotizaciones/dolar-blue" frameborder="0"></iframe>
+  </div>
+</aside>
+
+{% endblock %}
+
+{% block footerjs %}
+
+{% endblock %}

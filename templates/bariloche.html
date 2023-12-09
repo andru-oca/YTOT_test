@@ -1,0 +1,66 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+
+
+{% block title %} 
+<!-- Titulo Pagina -->
+You Trip, Our Trip - Bariloche
+{% endblock %}
+
+
+{% block content %}
+<!-- Bloque de Contenido -->
+<div class="main">
+    <h3 class="staff estilotitulobox">Te llevamos a Bariloche!!!</h3>
+    <br>
+    <article class="main">
+        <div class="Gallery">
+            <img src="{% static './Img/bariloche/imagen000.jpg' %}" alt="Bariloche Ski" />
+            <img src="{% static './Img/bariloche/imagen001.jpg' %}" alt="Bariloche Cartel" />
+            <img src="{% static './Img/bariloche/imagen0011.jpg' %}" alt="Bariloche Cerro" />
+            <img src="{% static './Img/bariloche/imagen0012.jpg' %}" alt="Bariloche Trineos" />
+            <img src="{% static './Img/bariloche/imagen0015.jpg' %}" alt="Bariloche Cabalgatas" />
+            <img src="{% static './Img/bariloche/imagen0016.jpg' %}" alt="Bariloche Veleros" />
+            <img src="{% static './Img/bariloche/imagen002.jpg' %}" alt="Bariloche Nieve Total" />
+            <img src="{% static './Img/bariloche/imagen0022.jpg' %}" alt="Bariloche Bike" />
+            <img src="{% static './Img/bariloche/imagen003.jpg' %}" alt="Bariloche Ciudad" />
+            <img src="{% static './Img/bariloche/imagen0033.jpg' %}" alt="Bariloche Caminatas" />
+            <img src="{% static './Img/bariloche/imagen010.jpg' %}" alt="Bariloche Moto <i class=" mdi
+                mdi-sort-numeric-descending-variant:"></i>" />
+            <img src="{% static './Img/bariloche/imagen004.jpg' %}" alt="Bariloche Centro Civico" />
+            <img src="{% static './Img/bariloche/imagen006.jpg' %}" alt="Bariloche Nevado" />
+            <img src="{% static './Img/bariloche/imagen007.jpg' %}" alt="Bariloche Lago" />
+            <img src="{% static './Img/bariloche/imagen009.jpg' %}" alt="Bariloche Ski" />
+        </div>
+    </article>
+</div>
+
+<aside class="sidebarD">
+    <p class="titulosidebar estilotitulosidebar colortituloside">Nuestras Recomendaciones</p>
+    <a href="http://www.puntoserrano.com.ar/"><img class="imgStaff" src="{% static './Img/otrasOfertas/01.jpg' %}" alt="http://www.puntoserrano.com.ar/"> </a>
+    <p></p>
+    <p></p>
+    <img class="imgStaff" src="{% static './Img/otrasOfertas/oferta3.jpg' %}" alt="">
+    <p></p>
+    <p></p>
+    <img class="imgStaff" src="{% static './Img/otrasOfertas/oferta1.jpg' %}" alt="">
+    <p></p>
+    <p></p>
+    <img class="imgStaff" src="{% static './Img/otrasOfertas/oferta2.jpg' %}" alt="">
+    <p></p>
+    <p></p>
+    <img class="imgStaff" src="{% static './Img/otrasOfertas/oferta4.jpg' %}" alt="">
+    <p></p>
+    <p></p>
+    <img class="imgStaff" src="{% static './Img/otrasOfertas/oferta5.jpg' %}" alt="">
+    <p></p>
+    <p></p>
+    <a href="http://www.puntoserrano.com.ar/"><img class="imgStaff" src="{% static './Img/otrasOfertas/oferta6.jpg' %}" alt=""> </a>
+    <p></p>
+    <p></p>
+</aside>
+{% endblock %}
+
+{% block footerjs %}
+<!-- Scripts js  -->
+{% endblock %}

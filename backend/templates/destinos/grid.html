@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block titulo %}You Trip, Our Trip - Lista de Destinos {% endblock %}
+
+{% block contenido %}
+
+<br />
+<div class="card">
+    <div class="card-header">
+        <h5>
+            <a name="" id="" class="btn btn-sm btn-outline-success" href="{% url 'newsurl' %}" role="button"
+                data-toggle="tooltip" data-placement="top" title="Nuevo Destino"><i
+                    class="fa fa-fw fa-solid fa-plus nav-icon"></i></a>
+                    Lista de Destinos
+        </h5>
+    </div>
+    <div class="card-body">
+        <!-- <h4 class="card-title">Destinos</h4> -->
+
+        <div class="table-responsive">
+            <table class="table table-striped table-responsive table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Destino</th>
+                        <th scope="col">Detalle</th>
+                        <th scope="col">Premio</th>
+                        <th scope="col">Días</th>
+                        <th scope="col">Cobertura</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for destino in destinos %}
+                    <tr class="">
+                        <td> {{ destino.id }} </td>
+                        <td> {{ destino.destino }} </td>
+                        <td>{{ destino.detalle }}</td>
+                        <td>{{ destino.premio }}</td>
+                        <td>{{ destino.detalle_dias }}</td>
+                        <td>{{ destino.cobertura }}</td>
+                        <td>
+                            <img src="{{ destino.imagen.url }}" alt="{{ destino.destino }}" height="100" />
+                            
+                        </td>
+                        <!-- <td>Item</td> -->
+                        <td> <a name="" id="" class="btn btn-sm btn-outline-primary" href="{% url 'updatesurl' destino.id %}"
+                                role="button" data-toggle="tooltip"  title="Actualizar Destino"><i
+                                    class="fa fa-fw fa-solid fa-pen"></i></a>
+                            <a name="" id="" class="btn btn-sm btn-outline-danger" href="{% url 'deletesurl' destino.id %}"
+                                role="button" data-toggle="tooltip" data-placement="top" title="Baja Destino"><i
+                                    class="fa fa-fw fa-solid fa-trash"></i></a>
+
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+
+        </p>
+    </div>
+</div>
+
+
+{% endblock %}

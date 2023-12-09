@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.formdiv{
+  align-self: center;
+}
+
+.formCambio {
+  display: block;
+  width: 340px;
+  padding: 30px;
+  border-radius: 7px;
+  background-color: var(--colorFondoConvertidor);
+  box-shadow: var(--sombra-convertidor);
+  font-family: 'Poppins', sans-serif;
+}
+
+.formCambio :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.formCambio p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.formCambio input {
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+
+.formCambio input:focus {
+  padding: 0 14px;
+  border: 2px solid #675AFE;
+}
+
+.formCambio .drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drop-list .select-box {
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #999;
+}
+
+.select-box img {
+  max-width: 21px;
+}
+
+.select-box select {
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+.drop-list .icon {
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.formCambio .cambio {
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+
+.formCambio button {
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: rgb(46, 46, 100);
+  transition: 0.3s ease;
+}
+
+.formCambio button:hover {
+  background: rgb(109, 109, 172)
+}
+
+.headerConvertidor{
+  color: rgb(46, 46, 100)
+}
+
+
+.desde,
+.desde p,
+.destino,
+.destino p,
+.drop-list,
+.txtImporte,
+.txtImporte p,
+.headerConvertidor,
+.iconcolor,
+.icon
+{
+  background-color: var(--colorFondoConvertidor);
+}

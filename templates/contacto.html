@@ -1,0 +1,127 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+
+
+{% block title %} 
+<!-- Titulo Pagina -->
+You Trip, Our Trip - Contacto
+{% endblock %}
+
+
+{% block content %}
+<!-- Bloque de Contenido -->
+  <div class="main">
+    <article class="main">
+      <div class="form-wrapper">
+        <!-- <h3 class="titulo"> Contacto</h3> -->
+        <h3 class="titulos_ofertas">Contacto</h3>
+        <br>
+        <form action="" class="formulario" id="formulario">
+          <!-- contenedor nombre -->
+          <div class="wrap-formulario wrap-formulario-correcto" id="wrap-nombre">
+            <label for="nombre" class="formulario-label">Nombre</label>
+            <div class="wrap-input">
+              <input type="text" class="formulario-input" name="nombre" id="nombre" placeholder=" Escribe tu nombre">
+              <i class="validacion-form  fa fa-fw fa-solid fa-certificate nav-icon"></i>
+            </div>
+            <p class="formulario-error">Debe ingresar un nombre válido</p>
+          </div>
+
+          <!-- contenedor apellido -->
+          <div class="wrap-formulario wrap-formulario-correcto" id="wrap-apellido">
+            <label for="apellido" class="formulario-label">Apellido</label>
+            <div class="wrap-input">
+              <input type="text" class="formulario-input" name="apellido" id="apellido"
+                placeholder=" Escribe tu apellido">
+              <i class="validacion-form  fa fa-fw fa-solid fa-certificate nav-icon"></i>
+            </div>
+            <p class="formulario-error">Debe ingresar un apellido válido</p>
+          </div>
+
+          <!-- contenedor email -->
+          <div class="wrap-formulario" id="wrap-email">
+            <label for="email" class="formulario-label">Email</label>
+            <div class="wrap-input">
+              <input type="email" class="formulario-input" name="email" id="email"
+                placeholder=" Escribe tu correo electrónico">
+              <i class="validacion-form fa-solid fa-circle-xmark"></i>
+              <p class="formulario-error">Debe ingresar un email válido</p>
+            </div>
+          </div>
+
+          <!-- contenedor Teléfono -->
+          <div class="wrap-formulario" id="wrap-telefono">
+            <label for="telefono" class="formulario-label">Teléfono</label>
+            <div class="wrap-input">
+              <input type="tel" class="formulario-input" name="telefono" id="telefono"
+                placeholder=" Escribe tu número de teléfono">
+              <i class="validacion-form fa-solid fa-circle-xmark"></i>
+              <p class="formulario-error">Ingrese un número de teléfono válido</p>
+            </div>
+          </div>
+
+          <!-- contenedor comentario -->
+          <div class="wrap-formulario" id="wrap-comentario">
+            <label for="mensaje" class="formulario-label">Comentario</label>
+            <div class="wrap-input">
+              <textarea class="formulario-comentario" name="mensaje" rows="10" id="mensaje"
+                placeholder=" Déjanos tu comentario"></textarea>
+              <i class="validacion-form fa-solid fa-fw fa-bomb"></i>
+              <p class="formulario-error"> </p>
+            </div>
+          </div>
+
+          <div class="formulario-mensaje" id="formulario-mensaje">
+            <p><i class="fa-solid fa-triangle-exclamation"></i>
+              ERROR: Debe completar el formulario antes de enviar.
+            </p>
+          </div>
+
+          <!-- contenedor Terminos -->
+          <div class="formulario-grupo" id="wrap-terminos">
+            <label class="formulario-label">
+              <input class="form-checkbox" type="checkbox" name="terminos" id="terminos">
+              Acepto términos y condiciones.
+            </label>
+          </div>
+
+          <div class="wrap-formulario formulario-grupo-boton">
+            <button type="submit" class="formulario-boton">
+              ENVIAR
+            </button>
+            <p class="mensaje-exito" id="mensaje-exito">Mensaje enviado satisfactoriamente</p>
+          </div>
+        </form>
+      </div>
+    </article>
+  </div>
+
+
+  <aside class="sidebarDForm">
+    <div class="wrap-side">
+      <h4>PARA NOSOTROS ES IMPORTANTE CONOCER TU OPINIÓN</h4>
+      <p>
+        Estamos interesados en conocer los destinos que nuestros usuarios quieren encontrar en nuestra página
+        web.<br>
+        Es por ello que creamos esta sección de contacto en la que sos libre de dejar tus sugerencias para que
+        podamos ofrecerte un mejor servicio.<br>
+      </p>
+      <br>
+
+      <h4>TENGO UN SERVICIO TURÍSTICO, ¿PUEDO PUBLICAR CON USTEDES?</h4>
+      <P>
+        Por supuesto que si. Tan solo ponete en contacto con nosotros, indicanos tu propuesta y nuestro equipo se
+        pondrá en contacto con vos.<br><br>
+      </P>
+
+      <div class="image-form">
+        <img src="{% static './Img/form/turismo.jpg' %}">
+      </div>
+    </div>
+  </aside>
+{% endblock %}
+
+{% block footerjs %}
+<!-- Scripts js  -->
+<script src="{% static './js/formulario.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,172 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+
+
+{% block title %} 
+<!-- Titulo Pagina -->
+You Trip, Our Trip - Quienes Somos
+{% endblock %}
+
+{% block script_src %}
+<link rel="stylesheet" href="{% static './css/owl.carousel.min.css' %}">
+<script src="{% static './js/jquery-3.5.1.js' %}"></script>
+<script src="{% static './js/owl.carousel.min.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+<!-- Bloque de Contenido -->
+<div class="main">
+  <h3 class="staff estilotitulobox">Staff</h3>
+  <br><br><br>
+  <article class="main">
+    <div id="carrousel" class="slider owl-carousel">
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/persona1.jpg' %}" alt="Brigitte Smile"></div>
+        <div class="content">
+          <div class="title">Brigitte Smile</div>
+          <div class="sub-title">CEO</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/persona2.jpg' %}" alt="Alex Coppola"></div>
+        <div class="content">
+          <div class="title">Alex Coppola<i class="baseline-control_point_duplicate"></i></div>
+          <div class="sub-title">Director</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/anibal.jpg' %}" alt="Morena Coin"></div>
+        <div class="content">
+          <div class="title">Morena Coin</div>
+          <div class="sub-title">Finanzas</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/persona3.jpg' %}" alt="María Smart P."></div>
+        <div class="content">
+          <div class="title">María Smart P.</div>
+          <div class="sub-title">Ventas</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/persona4.jpg' %}" alt="Paul Jelou"></div>
+        <div class="content">
+          <div class="title">Paul Jelou</div>
+          <div class="sub-title">Clientes</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/compras.jpg' %}" alt="Rita Market"></div>
+        <div class="content">
+          <div class="title">Rita Market</div>
+          <div class="sub-title">Compras</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/finanzas.jpg' %}" alt="Vera GreatIncome"></div>
+        <div class="content">
+          <div class="title">Vera GreatIncome</div>
+          <div class="sub-title">Contaduría</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carrousel" class="slider owl-carousel">
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/personas5.jpg' %}" alt="Claudia Gold Silver"></div>
+        <div class="content">
+          <div class="title">Claudia Gold Silver</div>
+          <div class="sub-title">Tesorera</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/equipo.jpg' %}" alt="Thelma & Louis"></div>
+        <div class="content">
+          <div class="title">Thelma & Louis</div>
+          <div class="sub-title">App Developer</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/ideas.jpg' %}" alt="Susan Light"></div>
+        <div class="content">
+          <div class="title">Susan Light</div>
+          <div class="sub-title">Ideas</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/marketing.jpg' %}" alt="Sandra Graph"></div>
+        <div class="content">
+          <div class="title">Sandra Graph</div>
+          <div class="sub-title">Marketing</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/chicascallcenter.jpg' %}" alt="Pretties Girls"></div>
+        <div class="content">
+          <div class="title">Pretties Girls</div>
+          <div class="sub-title">Call Center</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img"><img src="{% static './Img/quienes/secutity.jpg' %}" alt="Mr. X"></div>
+        <div class="content">
+          <div class="title">Mr. X</div>
+          <div class="sub-title">Security</div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+
+<aside class="sidebarDQuienes">
+  <p class="titulosidebar estilotitulosidebar colortituloside">Nuestras Oficinas</p>
+  <img class="imgStaff" src="{% static './Img/quienes/oficina.jpg' %}" alt="Recepcion">
+  <p></p>
+  <img class="imgStaff" src="{% static './Img/quienes/callcenter.jpg' %}" alt="Area de ventas">
+  <p></p>
+  <p class="titulosidebar estilotitulosidebar colortituloside">Trabajo en equipo</p>
+  <img class="imgStaff" src="{% static './Img/quienes/teamwork.jpg' %}" alt="Trabajo en equipo">
+</aside>
+
+
+{% endblock %}
+
+{% block footerjs %}
+<!-- Scripts js  -->
+<script>
+  $(".slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 1100, //2000ms = 2s;
+    autoplayHoverPause: true,
+    responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:false
+      },
+      600:{
+          items:2,
+          nav:false
+      },
+      1000:{
+          items:2,
+          nav:false,
+          // loop:false
+      }
+  }      
+  });
+</script>
+{% endblock %}

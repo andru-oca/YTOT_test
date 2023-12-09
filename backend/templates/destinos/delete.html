@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block titulo %}You Trip, Our Trip - Nuevo Destino {% endblock %}
+
+{% block contenido %}
+
+<br />
+
+<div class="card">
+    <div class="card-header">
+        <h5>Baja de Información del Destino</h5>
+    </div>
+    <div class="card-body">
+       {% include 'destinos/formbaja.html' %}
+    </div>
+
+</div>
+
+
+
+{% endblock %}

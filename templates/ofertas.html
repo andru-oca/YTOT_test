@@ -1,0 +1,130 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+
+
+{% block title %} 
+<!-- Titulo Pagina -->
+You Trip, Our Trip - Contacto
+{% endblock %}
+
+{% block script_src %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="{% static './js/flickity.pkgd.min.js' %}"></script>
+<script src="{% static './js/ofertasCarrousel.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+<!-- Bloque de Contenido -->
+<div class="main">
+  <div class="ofertas-grid">
+      <h3 class="titulos_ofertas">Ofertas</h3>
+      <div class="flickity-carousel">
+          <div class="carousel-cell promo-1">
+              <div class="bannerOferta">
+                  <div class="rating-holder">
+                      <div class="c-rating c-rating--small" data-rating-value="4">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-cell promo-2">
+              <div class="bannerOferta">
+                  <h3></h3>
+                  <p class="precio"></p>
+                  <div class="rating-holder">
+                      <div class="c-rating c-rating--small" data-rating-value="4">
+                          <p><strong></strong><br></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-cell promo-3">
+              <div class="bannerOferta">
+                  <div class="rating-holder">
+                      <div class="c-rating c-rating--small" data-rating-value="4">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="tarjeta oferta1">
+          <img src="{% static './Img/SaltaPaquete.jpg' %}" alt="Salta">
+          <h3>Paquete a Salta</h3>
+          <p class="precio">8 dias/7 noches</p>
+          <div class="rating-holder">
+              <div class="c-rating c-rating--small" data-rating-value="4">
+                  <p><strong>$ 150.720 </strong><br> Precio final por persona</p>
+              </div>
+          </div>
+          <p><a href="#"><button class="btnCir">Ver info...</button></a></p>
+      </div>
+
+      <div class="tarjeta oferta2">
+          <img src="{% static './Img/PuertoIguazu.jpg' %}" alt="Puerto Iguazu">
+          <h3>Puerto Iguazu</h3>
+          <p class="precio">7 dias/6 noches</p>
+          <div class="rating-holder">
+              <div class="c-rating c-rating--small" data-rating-value="4.5">
+                  <p><strong>$ 199,565</strong> <br>Precio final por persona</p>
+              </div>
+          </div>
+          <p><a href="#"><button class="btnCir">Ver info...</button></a></p>
+      </div>
+
+      <div class="tarjeta oferta3">
+          <img src="{% static './Img/bariloche.jpg' %}" alt="Bariloche">
+          <h3>Bariloche</h3>
+          <p class="precio">6 dias/5 noches</p>
+          <div class="rating-holder">
+              <div class="c-rating c-rating--small" data-rating-value="5">
+                  <p><strong>$ 130.334 </strong> <br>Precio final por persona</p>
+              </div>
+          </div>
+          <p><a href="#"><button class="btnCir">Ver info...</button></a></p>
+      </div>
+
+      <div class="tarjeta oferta4">
+          <img src="{% static './Img/mendoza.jpg' %}" alt="Mendoza">
+          <h3>Mendoza</h3>
+          <p class="precio">6 dias/5 noches</p>
+          <div class="rating-holder">
+              <div class="c-rating c-rating--small" data-rating-value="4">
+                  <p><strong>$ 150.665 </strong> <br>Precio final por persona</p>
+              </div>
+          </div>
+          <p><a href="#"><button class="btnCir">Ver info...</button></a></p>
+      </div>
+  </div>
+</div>
+
+<aside class="sidebarD">
+
+  <h3>¿Como son nuestras ofertas?</h3>
+  </div>
+  <p>Las mejores promociones en vuelos, hoteles, paquetes y más, reunidas en un solo lugar. Cuando identificamos
+      precios muy bajos en nuestros productos, te los acercamos a través de esta página, así te es más fácil
+      encontrar los precios más convenientes y volver a viajar.</p><br>
+  <div>
+      <h3>¿Por cuánto tiempo están disponibles las ofertas?</h3>
+  </div>
+  <p>Precios así de bajos duran poco. Si te interesa algún descuento, aprovechá antes de que vuele. ¿Te perdiste
+      una oferta? No te preocupes. Todos los días y semanas vas a encontrar nuevas Ofertas. Y tené en cuenta que,
+      además de vuelos, paquetes, alojamientos y más productos baratos, también te ofrecemos distintos medios de
+      pago y planes de cuotas. Así solo tienes que preocuparte en disfrutar.</p><br>
+  <div>
+      <h3>¿Por qué ahorrás más comprando paquetes?</h3>
+  </div>
+  <p>Con un paquete turístico, siempre conseguís un descuento significativo. ¿Cómo funciona? Al sumar un
+      alojamiento o un auto y armar tu paquete a medida, con productos adicionales como traslados o actividades,
+      terminás ahorrando en el valor total de tu viaje. Te saldría mucho más caro comprar cada producto por
+      separado. Aprovechá nuestros paquetes baratos y ¡preparate para viajar!</p><br>
+  <div>
+</aside>
+
+{% endblock %}
+
+{% block footerjs %}
+<!-- Scripts js  -->
+{% endblock %}

@@ -1,0 +1,248 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+
+
+{% block title %}You Trip, Our Trip{% endblock %}
+
+
+{% block content %}
+
+<div class="main">
+    <h3 class="recomendaciones estilotitulobox">Nuestras Recomendaciones</h3>
+    <article class="main">
+        <div class="tarjetappal">
+            <img src="{% static './Img/bariloche.jpg' %}" alt="Bariloche">
+            <h3>Bariloche</h3>
+            <p class="precio">desde $49.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="{% url 'barilocheurl' %}"><button>Ver más...</button></a></p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="{% static './Img/callafate.jpg' %}" alt="Calafate">
+            <h3>Calafate</h3>
+            <p class="precio">desde $59.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4.5">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="#"><button>Ver más...</button></a></p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="{% static './Img/buenosAires1.jpg' %}" alt="Buenos Aires">
+            <h3>Buenos Aires</h3>
+            <p class="precio">desde $39.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="#"><button>Ver más...</button></a></p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="{% static './Img/Villa-Traful-BET-2018_-1-960x626.jpg' %}" alt="Villa Traful">
+            <h3>Villa Traful</h3>
+            <p class="precio">desde $59.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="#"><button>Ver más...</button></a></p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="{% static './Img/cataratas1.jpg' %}" alt="Cataratas del Iguazú">
+            <h3>Cataratas</h3>
+            <p class="precio">desde $59.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="#"><button>Ver más...</button></a></p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="{% static './Img/ushuaia1.jpg'%}" alt="Ushuaia">
+            <h3>Ushuaia</h3>
+            <p class="precio">desde $69.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="#"><button>Ver más...</button></a></p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="{% static './Img/salta.jpg' %}" alt="Salta">
+            <h3>Salta</h3>
+            <p class="precio">desde $69.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="#"><button>Ver más...</button></a></p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="{% static './Img/mendoza.jpg'%}" alt="Mendoza">
+            <h3>Mendoza</h3>
+            <p class="precio">desde $39.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="#"><button>Ver más...</button></a></p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="{% static './Img/cordoba1.jpg'%}" alt="Córdoba">
+            <h3>Córdoba</h3>
+            <p class="precio">desde $39.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="#"><button>Ver más...</button></a></p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="{% static './Img/Rosario-Argentina.jpg' %}" alt="Rosario">
+            <h3>Rosario</h3>
+            <p class="precio">desde $29.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="#"><button>Ver más...</button></a></p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="{% static './Img/madryn.jpg' %}" alt="puerto madryn">
+            <h3>Puerto Madryn</h3>
+            <p class="precio">desde 69.999</p>
+            <div class="rating-holder">
+                <div class="c-rating c-rating--small" data-rating-value="4">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
+            </div>
+            <p><a href="#"><button>Ver más...</button></a></p>
+        </div>
+    </article>
+</div>
+
+<aside class="sidebarD">
+    <div class="travel">
+        <h1 class="texto-center hashtag">
+            <span class="travelspan">#TRAVEL SALE</span>
+        </h1>
+        <h3 class="texto-hasta nuevotravel">
+            <!-- <span class="spanhasta">¡Hasta la próxima!</span> -->
+            ¡Hasta la próxima!
+        </h3>
+        <p class="texto-linea texto-center texto-bold texto-rotado">
+            Llega en Diciembre 2023!!!</p>
+    </div>
+    <br>
+
+    <div class="formdiv">
+        <form class="formCambio" action="#">
+            <header class="headerConvertidor">Convertidor de Monedas</header>
+            <div class="txtImporte">
+                <p>Importe a Convertir</p>
+                <input type="text" value="1" placeholder="Ingrese Importe a Convertir">
+            </div>
+            <div class="drop-list">
+                <div class="desde">
+                    <p>Origen</p>
+                    <div class="select-box">
+                        <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                        <select> <!-- Opciones desde JavaScript --> </select>
+                    </div>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-exchange-alt iconcolor"></i>
+                </div>
+                <div class="destino">
+                    <p>Destino</p>
+                    <div class="select-box">
+                        <img src="https://flagcdn.com/48x36/ar.png" alt="flag">
+                        <select> <!-- Opciones desde JavaScript --> </select>
+                    </div>
+                </div>
+            </div>
+            <div class="cambio">Obteniendo cambio...</div>
+            <button>Calcular</button>
+        </form>
+    </div>
+    <br>
+    <div class="formdiv">
+        <a href="http://www.puntoserrano.com.ar/"><img class="cartones" src="{% static './Img/serrano.png' %}" alt="">
+        </a>
+    </div>
+</aside>
+
+{% endblock %}
+
+
+{% block footerjs %}
+<script src="{% static './js/paises.js' %}"></script>
+<script src="{% static './js/convert.js' %}"></script>
+{% endblock %}

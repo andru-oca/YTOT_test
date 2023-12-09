@@ -1,0 +1,162 @@
+.Calafate {
+    background-image: url(../../static/Img/calafate11.jpg);
+    padding: 20px;
+    background-size: cover!important;
+    border-radius: 18px;
+    transform: rotateY(0deg);
+    transition: 5s;
+}
+
+.Calafate:hover {
+    transform: rotateY(360deg);
+}
+
+.Calafate h3{
+    background-color: transparent;
+    }
+.Calafate p{
+    background-color: transparent;
+    color: black;
+}
+
+.Mendoza {
+    background-image: url(../../static/Img/mendoza1.jpg);
+    padding: 20px;
+    background-size: cover !important;
+    border-radius: 18px;
+    transform: rotateY(0deg);
+    transition: 5s;
+}
+
+.Mendoza:hover {
+    transform: rotateY(360deg);
+}
+
+.Mendoza h3{
+    background-color: transparent;
+}
+.Mendoza p{
+    background-color: transparent;
+    color: black;
+}
+
+.Cataratas {
+    background-image: url(../../static/Img/cataratas2.jpg);
+    padding: 20px;
+    background-size: cover;
+    border-radius: 18px;
+    transform: rotateX(0deg);
+    transition: 5s;
+}
+
+.Cataratas:hover {
+    transform: rotateX(360deg);
+}
+
+.Cataratas h3{
+    background-color: transparent;
+}
+.Cataratas p{
+    background-color: transparent;
+    color: black;
+}
+
+.BuenosAires {
+    background-image: url(../../static/Img/caba1.jpg);
+    padding: 20px;
+    text-decoration: none;
+    text-shadow: none ;
+    background-size: cover;
+    border-radius: 18px;
+    text-decoration: none;
+    transform: rotateX(0deg);
+    transition: 5s;
+}
+
+.BuenosAires:hover {
+    transform: rotateX(360deg);
+}
+
+.BuenosAires h3{
+    background-color: transparent;
+}
+.BuenosAires p{
+    background-color: transparent;
+    color: black;
+}
+
+
+.verano {
+    background-image: url(../../static/Img/verano.jpg);
+    background-size: cover;
+    width: 340px;
+    padding: 20px;
+    box-shadow: var(--sombra-container);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.veranotexto {
+    text-align: center !important;
+    transform: rotate(7deg);
+    margin: 0;
+    background-color: #abcc18;
+}
+
+.spanverano {
+    background-color: #abcc18;
+    color: #3d92cb;
+}
+
+
+.invierno {
+    background-image: url(../../static/Img/invierno.jpg);
+    background-size: cover;
+    width: 340px;
+    padding: 20px;
+    box-shadow: var(--sombra-container);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.inviernotexto{
+    text-align: center !important;
+    transform: rotate(7deg);
+    margin: 0;
+    background-color:#3d92cb;
+}
+
+
+.spaninvierno {
+    background-color: #3d92cb;
+    color: #abcc18;
+}
+
+.buscado {
+    width: 55%;
+    background-color: #3d92cb;
+    padding: 10px;
+    height: 60px;
+    text-align: center !important;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+  }
+  
+
+  .buscadotitulo {
+    width: 55%;
+    padding: 10px;
+    height: 60px;
+    text-align: center !important;
+
+  }
+  
+  .spanbuscado {
+    color: #efefe3;
+    background-color: #3d92cb;
+    text-align: center !important;
+    text-shadow: 0 0 5px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 400px;
+ }

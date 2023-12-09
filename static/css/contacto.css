@@ -1,0 +1,197 @@
+h4 p{
+    text-align: justify;
+}
+
+.main{
+   border-left: 10px;
+}
+
+.form-wrapper .formulario{
+    box-shadow: black;
+}
+
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    /* box-shadow: black; */
+}
+
+.formulario{
+    width: 480px;
+    color: rgba(18, 25, 120, 0.863);
+    border: solid 2px rgb(126, 166, 211);
+    background-color: var(--fondoContacto);
+    box-shadow: var(--sombra-container);
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.wrap-formulario{
+    background-color: var(--fondoContacto);
+    margin-top: 20px;
+}
+
+.formulario-label{
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 12px;
+    background-color: var(--fondoContacto);
+}
+
+ .wrap-input{
+    position: relative;
+    justify-items: center;
+    background-color: var(--fondoContacto);
+} 
+
+.formulario-input{
+    width: 400px;
+    background: white;
+    height: 40px;
+    border-radius: 4px;
+    line-height: 30px;
+    transition: .2s;
+    border-top-right-radius: 18px;
+}
+
+.formulario-input:focus{
+    border: 4px solid rgb(39, 162, 203);
+    outline: none;
+    box-shadow: 3px 0px 20px cadetblue;
+
+}
+
+.formulario-comentario{
+    width: 400px;
+    background: white;
+    height: 100px;
+    border-radius: 4px;
+    line-height: 30px;
+    transition: .2s;
+    border-top-right-radius: 18px;
+}
+
+.formulario-comentario:focus{
+    border: 4px solid rgb(39, 162, 203);
+    outline: none;
+    box-shadow: 3px 0px 20px cadetblue;
+}
+
+
+ .formulario-error{
+    font-size: 15px;
+    background-color: var(--fondoContacto);
+    color: rgb(229, 31, 31);
+    display: none;
+}
+
+.formulario-error-activo{
+    display: block;
+}
+
+.validacion-form{
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    z-index: 100;
+    background-color: var(--fondoContacto);
+    opacity: 0;
+}
+
+    
+.formulario-mensaje{
+    height: 40px;
+    line-height: 30px;
+    padding: 0 30px 0 30px;
+    background-color: var(--fondoContacto);
+    border-radius: 3px;
+    display: none;
+}
+
+
+.formulario-mensaje p{
+    width: 100%;
+    color: black;
+    background-color:  #dd5e59;
+    border-radius: 5px;
+}
+
+.formulario-mensaje-activo{
+    display: block;
+}
+
+.formulario-mensaje-inactivo{
+    display: none;
+}
+
+.formulario-mensaje p{
+    margin: 0;
+}
+
+.formulario-grupo-boton{
+    margin-bottom: 30px;
+}
+
+.formulario-boton{
+    height: 40px;
+    line-height: 40px;
+    width: 40%;
+    background-color:rgba(18, 25, 120, 0.863);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.formulario-boton:hover{
+    box-shadow: 2px 0px 20px #2222b5;
+}
+
+.mensaje-exito{
+    font-size: 20px;
+    color:rgb(27, 241, 27);
+    background-color: var(--fondoContacto);
+    display: none;
+}
+
+.mensaje-exito-activo{
+    display: block;
+}
+
+.prueba{
+    background: yellow;
+}
+
+
+/* estilos validacion icono correcto */
+.wrap-formulario-correcto .validacion-form{
+    color:rgb(23, 190, 23);
+
+}
+
+ /* estilos validacion icono incorrecto */
+.wrap-formulario-incorrecto .formulario-label{
+    color: rgb(229, 31, 31);
+}
+
+.wrap-formulario-incorrecto .validacion-form{
+    color: rgb(229, 31, 31);
+}
+
+.wrap-formulario-incorrecto .formulario-input{
+    border: 3px solid rgb(229, 31, 31);
+}
+
+
+.sidebarDForm{
+    grid-area: sidebarD;
+    }
+
+.sidebarDForm .wrap-side{
+    margin-top: 50px;
+}

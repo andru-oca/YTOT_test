@@ -1,0 +1,139 @@
+
+.slider {
+  position: relative;
+  left: -320px;
+  margin-left: 50%;
+}
+
+.sidebarD {
+  padding: 10px;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 150px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.swiper,
+.flickity-carousel {
+  margin-top: 10px;
+}
+
+.bannerOferta,
+.bannerOferta h3,
+.bannerOferta p,
+.bannerOferta .rating-holder,
+.bannerOferta .c-rating.c-rating--small,
+.bannerOferta strong,
+.bannerOferta>p>a {
+  background-color: transparent;
+}
+
+.bannerOferta h3 {
+  color: aliceblue;
+}
+
+.titulos_ofertas {
+  grid-area: titulo;
+  width: auto;
+  height: 60px;
+  background-color: #3d92cb;
+  padding: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.oferta1 {
+  grid-area: oferta1;
+}
+
+.oferta2 {
+  grid-area: oferta2;
+}
+
+.oferta3 {
+  grid-area: oferta3;
+}
+
+.oferta4 {
+  grid-area: oferta4;
+}
+
+.flickity-carousel {
+  grid-area: carousel;
+}
+
+.flickity-carousel ol li {
+  list-style-type: none;
+}
+
+.sidebarD h3 {
+  color: rgb(9, 9, 132);
+  background-color: white;
+}
+
+.header {
+  z-index: 10;
+}
+
+.ofertas-grid {
+  display: grid;
+  z-index: 0;
+  grid-template:
+    "titulo"
+    "carousel"
+    "oferta1"
+    "oferta2"
+    "oferta3"
+    "oferta4"
+}
+
+.promo-1 {
+  background-image: url("../../static/Img/playa-del-carmen-oferta.jpg");
+  background-size: cover;
+}
+
+.promo-2 {
+  background-image: url("../../static/Img/PlayaYCalor-mobile.png");
+  background-size: cover;
+}
+
+.promo-3 {
+  background-image: url("../../static/Img/promo-argentina-6-cuotas-v2-mobile.png");
+  background-size: cover;
+}
+
+
+
+@media (min-width: 600px) {
+  .ofertas-grid {
+    display: grid;
+    grid-template:
+      "titulo titulo"
+      "carousel carousel"
+      "oferta1 oferta2"
+      "oferta3 oferta4"
+  }
+
+  .promo-2 {
+    background-image: url("../../static/Img/PlayaYCalor.png");
+  }
+
+  .promo-3 {
+    background-image: url("../../static/Img/promo-argentina-6-cuotas-v2.png");
+  }
+}

@@ -1,0 +1,56 @@
+.texto-center {
+    text-align: center !important;
+  }
+  
+  .texto-hasta {
+    text-align: center !important;
+    background-color: #b7237b;
+  }
+
+  .hashtag {
+    transform: rotate(-3deg);
+    margin: 0;
+    background-color: #0aa354;
+  }
+  
+  .nuevotravel {
+    margin: 25px 0 15px;
+    background-color: #b7237b;
+  }
+  
+  .spanhasta {
+    background-color: #ff7aca;
+    color: #fff;
+    padding: 0 25px;
+    font-weight: 600;
+  }
+  
+  
+  .texto-linea {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  
+  .texto-bold {
+    font-weight: 700 !important;
+  }
+  
+  .texto-rotado {
+    transform: rotate(-3deg);
+  }
+  
+  .travel {
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    width: 340px;
+    padding: 20px;
+    justify-content: center;
+    box-shadow: var(--sombra-container);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    align-self: center;
+  }
+  
+  .travelspan {
+    background-color: #0aa354;
+  }
+  

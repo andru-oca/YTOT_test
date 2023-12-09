@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+
+/*Elimino los margenes y paddings que agrega el navegador por defecto*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-main);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.grid-container>* {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+
+.btnCir {
+  padding: 10px;
+  border: var(--color-boton-tarjeta);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: var(--color-boton-tarjeta);
+}
+
+
+.header {
+  grid-area: header;
+  position: fixed;
+  text-align: left;
+  background-color: white;
+}
+
+.topmain {
+  grid-area: topmain;
+}
+
+.menuPrincipal {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.sidebarI {
+  grid-area: sidebarI;
+  width: var(--sidebarI-width)
+}
+
+.sidebarD {
+  grid-area: sidebarD;
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 400px;
+}
+
+.sidebarDQuienes {
+  grid-area: sidebarD;
+  display: flex;
+  flex-direction: column;
+  border: 20px;
+  padding: 50px;
+  justify-content: center;
+  width: 400px;
+}
+
+
+.sidebarDTop {
+  grid-area: sidebarD;
+  display: flex;
+  flex-direction: column;
+}
+
+.divmain {
+  background-color: var(--color-main);
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  grid-area: main;
+  background-color: var(--color-main);
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  box-shadow: none;
+}
+
+.mainactiv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 0px;
+}
+
+.finpage {
+  background-color: darkgray;
+  justify-content: center;
+  width: auto;
+}
+
+.titulos {
+  background-color: var(--color-main);
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.pie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  box-shadow: var(--sombra-container);
+}
+
+.estilotitulobox {
+  background-color: #3d92cb;
+  padding: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+
+.recomendaciones {
+  width: auto;
+  height: 60px;
+}
+
+.staff {
+  min-width: 400px;
+  height: 60px;
+}
+
+.terminosbox {
+  width: auto;
+  height: 60px;
+}
+
+
+.titulosidebar {
+  width: 300px;
+  align-self: center;
+}
+
+.colortituloside {
+  background-color: #f4910f;
+}
+
+.estilotitulosidebar {
+  padding: 1rem;
+  color: var(--color-text-footer);
+  text-align: center;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  font-family: "Mulish", sans-serif;
+  font-style: oblique;
+  font-size: large;
+}
+
+.estilotituloverde {
+  background-color: #03671e;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  font-family: "Mulish", sans-serif;
+  font-style: oblique;
+  font-size: large;
+}
+
+.quienes {
+  width: 50%;
+  background-color: #3d92cb;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 20px;
+  height: 120px;
+  color: #fff;
+  margin-top: 0;
+  text-align: center;
+  border-radius: 18px;
+  margin-bottom: 2rem;
+}
+
+
+.spanquienes {
+  background-color: #3d92cb;
+}
+
+.pquienes {
+  font-size: 1vw;
+  font-weight: 300;
+  background-color: #3d92cb;
+  color: lightgray
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "header" auto
+    "topmain" 75px
+    "main"
+    "sidebarI"
+    "sidebarD"
+    "footer" /
+    auto
+}
+
+@media (max-width: 600px) {
+  .slider {
+    width: 650px;
+  }
+  .sidebarDQuienes {
+    width: 450px;
+  }
+  /* .wrap-destinos{
+    display: flex;
+    flex-direction: column;
+  } */
+
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template:
+      "header" auto
+      "topmain" 75px
+      "main" auto
+      "sidebarI"
+      "sidebarD"
+      "footer" auto /
+      auto;
+  }
+}
+
+@media (min-width: 900px) {
+
+  .grid-container {
+    grid-template:
+      "header header header" auto
+      "topmain topmain topmain" 75px
+      "sidebarI main sidebarD" auto
+      "footer footer footer" auto /
+      var(--sidebarI-width) auto 400px;
+  }
+
+  .main-menu {
+    background-color: gray;
+    height: 50px;
+  }
+
+}
+
+.terminosbody {
+  top: 300px;
+  color: black;
+  width: 100%;
+  display: block;
+  height: 800px;
+  padding: 5vh;
+  text-align: justify;
+  font-style: italic;
+  overflow: scroll;
+}
+
+
+
+.login {
+  background-image: url(../../static/Img/calafate11.jpg);
+}

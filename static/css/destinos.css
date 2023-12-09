@@ -1,0 +1,70 @@
+.destinos{
+    width: 65%;
+    background-color: #3d92cb;
+    padding: 1em;
+    margin-bottom: 50px;
+    height: 60px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.spandestino{
+    background-color: #3d92cb;
+    color: white;
+}
+
+.wrap-destinos{
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+.tarjetaDestino {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 340px;
+    text-align: center;
+    font-family: arial;
+    border: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    /* height: 550px; */
+  }
+
+  .tarjetaDestino h3{
+    color: rgb(182, 23, 23);
+  }
+
+  .regalo{
+    color:red;
+    font-size: 20px;
+  }
+
+
+  .tarjetaDestino img {
+    width: 100%;
+    background-color: lightgrey;
+  }
+
+  .tarjetaDestino button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: var(--color-boton-atarjeta);
+    text-align: center;
+    cursor: pointer;
+    width:auto;
+    font-size: 14x;
+  }
+  
+  .tarjetaDestino button:hover {
+    opacity: 0.7;
+  }
+
+  .tarjetaDestino p {
+    background-color: var(--color-main);
+   }

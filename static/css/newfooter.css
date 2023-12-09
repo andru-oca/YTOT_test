@@ -1,0 +1,35 @@
+
+/* Contenido de footer */
+.newfooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+.newfooter h3,
+h4,
+h5,
+h6,
+p,
+a {
+    color: var(--color-text-footer);
+    margin: 10px;
+    text-decoration: none;
+    font-size: small;
+}
+
+.bt {
+    background-color: darkgray;
+    color: white;
+}
+
+.pie-iconos a{
+    color: gray;
+}
+
+#mapa{
+    padding: 10px;
+}

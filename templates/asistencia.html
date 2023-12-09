@@ -1,0 +1,89 @@
+{% extends 'masterpage.html' %}
+{% load static %}
+
+
+{% block title %} 
+<!-- Titulo Pagina -->
+You Trip, Our Trip - Asistencia en Viaje
+{% endblock %}
+
+
+{% block content %}
+<!-- Bloque de Contenido -->
+<div class="main">
+    <article class="main">
+        <div class="cardasist">
+            <div>
+                <h3>Asistencia al viajero, ¿qué es y por qué la necesito?</h3>
+                <p>
+                    Más que un seguro de viaje, es una asistencia al viajero. Los beneficios de la Asistencia al
+                    Viajero te
+                    protegen no sólo en el ámbito médico, por ejemplo asistencia odontológica de urgencia, por un
+                    esguince o
+                    fractura o malestares en general, sino también con asistencias de otras índoles tales como
+                    localización de equipaje, el reembolso de gastos por vuelo demorado o cancelado, asistencia en
+                    caso de robo o extravío de documentos y mucho más. ¡Viaja con la tranquilidad de estar cubierto
+                    ante cualquier eventualidad!
+                </p>
+                <h3>Qué incluye tu cobertura</h3>
+                <div class="cobertura-asist">
+                    <div class="cobertura-card">
+                        <img class="icon-asist" src="{% static './Img/asistencia/icon-med-1.svg' %}" alt="Asistencia médica">
+                        <p>Asistencia<br>
+                            médica.</p>
+                    </div>
+
+                    <div class="cobertura-card">
+                        <img class="icon-asist" src="{% static './Img/asistencia/icon-med-2.svg' %}"
+                            alt="Teleasistencia médica">
+                        <p>Teleasistencia<br>
+                            médica.</p>
+                    </div>
+
+                    <div class="cobertura-card">
+                        <img class="icon-asist" src="{% static './Img/asistencia/icon-med-3.svg' %}"
+                            alt="Asesoría y compensación ante demora y/o pérdida de equipaje">
+                        <p>Pérdida de <br>Equipaje</p>
+                    </div>
+
+                    <div class="cobertura-card">
+                        <img class="icon-asist" src="{% static './Img/asistencia/icon-med-4.svg' %}"
+                            alt="App con todo para viajar protegido.">
+                        <p>App con todo para<br>
+                            viajar protegido.</p>
+                    </div>
+
+                    <div class="cobertura-card">
+                        <img class="icon-asist" src="{% static './Img/asistencia/icon-med-5.svg' %}"
+                            alt="Asistencia ante COVID-19.">
+                        <p>Asistencia<br>
+                            ante COVID-19.</p>
+                    </div>
+                </div>
+                <p><a href="#"><button class="btnCir">Ver más detalle de la Cobertura de Asistencia al Viajero...
+                        </button></a></p>
+            </div>
+        </div>
+
+        <div class="cardasist">
+            <img src="{% static './Img/asistencia/travel.jpg' %}" alt="Villa Traful">
+        </div>
+    </article>
+</div>
+
+<aside class="sidebarD">
+    <div class="oferta-aside">
+        <br>
+        <p class="titulosidebar estilotituloverde">No te la pierdas!!!</p>
+        <div class="oferta-asit">
+            <img alt="Aprovechá hasta 30%OFF en Asitencia al viajero" src="{% static './Img/asistencia/cuotas.jpg' %}">
+            <p><a href="#"><button class="btnCir">Comprar
+                    </button></a>
+        </div>
+    </div>
+</aside>
+{% endblock %}
+
+{% block footerjs %}
+<!-- Scripts js  -->
+{% endblock %}

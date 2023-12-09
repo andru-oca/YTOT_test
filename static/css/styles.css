@@ -1,0 +1,43 @@
+@import url("./main.css");
+@import url("./tarjetas.css");
+@import url("./defensa.css");
+@import url("./newfooter.css");
+@import url("./star.css");
+@import url("./actividades.css");
+@import url("./monedas.css");
+@import url("./quienes.css");
+@import url("./lugares.css");
+@import url("./asistencia.css");
+@import url("./travel.css");
+@import url("./ofertas.css");
+@import url("./flickity.min.css");
+@import url("./buscado.css");
+@import url("./newmenu.css");
+@import url("./destinos.css");
+@import url("./contacto.css");
+
+:root {
+    --sombra-container: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    --sombra-convertidor: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    --color-header: #85aedd;
+    --main-color: #f5f5f5;
+    --color-navbar: #f5f5f5;
+    --color-sidebar: #f5f5f5;
+    --color-sidebarD: #f5f5f5;
+    --color-sidebarI: #f5f5f5;
+    --color-main: #f5f5f5;
+    --color-footer: #8c96a0;
+    --height-footer: 380px;
+    --height-navbar: 10px;
+    --navbar_itemcolor: #999;
+    --color-back-footer: lightgrey;
+    --color-text-footer: #2e518b;
+    --color-boton-tarjeta: #2e518b;
+    --colorFondoConvertidor: lightgray;
+    --color-boton-atarjeta: #1388b6;
+    --color-texto-asistencia: darkgray;
+    --sidebarI-width: 200px;
+    --gradiente: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    --color-topmenu: white;
+}
+

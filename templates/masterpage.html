@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>
+    {% block title %}
+    {% endblock %}
+    </title>    
+
+    <link rel="stylesheet" type="text/css" href="{% static './css/styles.css' %}">
+    <link href="{% static './ico/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>    
+    {% block script_src %}
+    {% endblock %}
+
+</head>
+
+<body class="grid-container">
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#"><img src="{% static './Img/logoAzul50.png' %}" alt="Your Trip, Out Trip"></a>
+            <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+            <button type="button" class="navbar-burger btn-burger" onclick="toggleMenuOpen()">
+                <a><i class="fa fa-fw fa-solid fa-bars"></i></a>
+            </button>
+
+            <nav class="navbar-menu">
+                <a href="{% url 'index' %}"><i class="fa fa-fw fa-home nav-icon"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="{% url 'destinos' %}"><i class="fa fa-fw fa-globe nav-icon"></i>
+                    <span>Destinos</span></a>
+
+                <a href="{% url 'ofertasurl' %}"><i class="fa fa-fw fa-solid fa-dollar-sign nav-icon"></i>
+                    <span>Ofertas</span></a>
+
+                <a href="{% url 'asistenciaurl' %}"><i class="fa fa-fw fa-solid fa-suitcase nav-icon"></i>
+                    <span>Asistencia al Viajero</span></a>
+
+                <a href="{% url 'actividadesurl' %}"><i class="fa fa-fw fa-solid fa-mountain nav-icon"></i>
+                    <span>Actividades</span></a>
+
+                <a href="{% url 'buscadourl' %}"><i class="fa fa-fw fa-regular fa-eye nav-icon"></i>
+                    <span>Lo más Buscado</span></a>
+
+
+                <a href="{% url 'contactourl' %}"><i class="fa fa-fw fa-regular fa-address-book nav-icon"></i>
+                    <span>Contacto</span></a>
+
+                <a href="{% url 'staffurl' %}"><i class="fa fa-fw fa-solid fa-user-plus"></i>
+                    <span>Staff</span></a>
+
+                <a href="https://api.whatsapp.com/send?phone=5491143804444&text=Hola%20,te%20asesoramos%20por
+                  %20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." target="_blank">
+                    <i class="fa fa-fw fa-brands fa-whatsapp nav-icon-ws"></i>
+                    <span>WhatsApp</span></a>
+            </nav>
+        </nav>
+    </header>
+
+    <div class="topmain"></div>
+
+    <aside class="sidebarI"></aside>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="newfooter pie">
+        <section id="contacto">
+            <h4>Información de contacto</h4>
+            <h4>Casa Central</h4>
+            <p>Av Libertador 336 1er. Piso,</p>
+            <p>C1001ABQ, CABA Buenos Aires, Argentina</p>
+            <h4>Atención al cliente:</h4>
+            <p>Av Libertador 336 Local,</p>
+            <p>C1001ABQ, CABA Buenos Aires, Argentina</p>
+            <h4>Whatsapp +54 11 4380 4444</h4>
+        </section>
+
+        <section id="mapa">
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.513227816231!2d-58.381184823463755!3d-34.59118145683763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab148ca3c39%3A0x8d4a567e30e56289!2sAv.%20del%20Libertador%20336%2C%20C1001ABQ%20CABA!5e0!3m2!1ses!2sar!4v1695333476270!5m2!1ses!2sar"
+                width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="empresa">
+            <br>
+            <h4>Nuestra Empresa</h4>
+            <p><a href="{% url 'staffurl' %}">Quienes somos</a></p>
+            <p><a href="{% url 'contactourl' %}">Contáctanos</a></p>
+            <p><a href="{% url 'terminosurl' %}">Términos y condiciones</a></p>
+            <p><a href="{% url 'defensaurl' %}">Ley de Defensa al Consumidor</a></p>
+            <br>
+            <adiv class="pie-iconos">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://twitter.com/iniciarsesion/" target="_blank"><i
+                        class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="https://www.youtube.com/index/" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+                <a href="https://www.afip.gob.ar/960/formulario-960/" target="_blank"> <img
+                        src="{% static './Img/DATAWEB.jpg' %}" alt=""></a>
+                </div>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="{% static './js/newmenu.js' %}"></script>
+    
+    {% block footerjs %}
+    {% endblock %}
+
+</body>
+
+</html>

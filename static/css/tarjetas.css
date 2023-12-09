@@ -1,0 +1,67 @@
+.tarjeta, .tarjetappal {
+    box-shadow: 0 4px 8px 0 #00000033;
+    max-width: 240px;
+    text-align: center;
+    font-family: arial;
+    border: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 30px;
+    height: 340px;
+  }
+ 
+
+  .precio {
+    color: grey;
+    font-size: 20px;
+    font-style: italic;
+    background-color: var(--color-main);
+  }
+  
+  .tarjeta img, .tarjetappal img {
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+
+  .tarjeta button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: var(--color-boton-tarjeta);
+    text-align: center;
+    cursor: pointer;
+    width:60%;
+    font-size: 14x;
+    border-radius: 50px;
+  }
+  
+
+  .tarjetappal button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(7, 169, 80);
+    text-align: center;
+    cursor: pointer;
+    width:60%;
+    font-size: 14x;
+    border-radius: 50px;
+  }
+
+  .tarjeta button:hover , .tarjetappal button:hover {
+    opacity: 0.7;
+  }
+
+  .tarjeta p, .tarjetappal p {
+    background-color: var(--color-main);
+   }
+
+   .tarjeta h3, .tarjetappal h3 {
+    background-color:  var(--color-main);
+   }

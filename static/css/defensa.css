@@ -1,0 +1,10 @@
+.defensa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98.95%;
+    height: var(--height-footer);
+    height: 3000px;
+    background-color: var(--main-color);
+    padding: 10px;
+}
