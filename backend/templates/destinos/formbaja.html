@@ -6,7 +6,8 @@
 
         {% if campo.field.widget.input_type == 'file' and campo.value %}
         <br />
-        <img src="{{ MEDIA_URL}}/imgDestinos/{{ campo.value }}" width="200" alt="" srcset="">
+        <img src="{{ MEDIA_URL}}/{{ campo.value }}" width="200" alt="" srcset="">
+        <!-- {{ MEDIA_URL}}/{{ campo.value }} -->
         {% endif %}
 
         {% if campo.field.widget.input_type != 'file' and campo.value %}

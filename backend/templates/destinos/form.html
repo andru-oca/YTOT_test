@@ -7,9 +7,10 @@
         {% if campo.field.widget.input_type == 'file' and campo.value %}
         <br />
         <!-- <img src="{{ MEDIA_URL}}/imgDestinos/{{ campo.value }}" width="100" alt="" srcset=""> -->
-        <img src="{{ campo.value }}" width="100" alt="" srcset="">
-        <!-- print({{ MEDIA_URL}}{{ campo.value }})
-        print({{ MEDIA_ROOT }}) -->
+        <!-- <img src="{{ campo.value }}" width="100" alt="" srcset=""> -->
+        <img src="{{ MEDIA_URL}}/{{ campo.value }}" width="100" alt="" srcset="">
+        <!-- {{ MEDIA_URL}}/{{ campo.value }}         -->
+
         {% endif %}
 
         <input type="{{ campo.field.widget.input_type}}" class="form-control" name="{{ campo.name }}" id=""

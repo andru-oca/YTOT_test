@@ -4,7 +4,7 @@ from import_export import resources
 from import_export.admin import ImportExportModelAdmin
 
 
-# Create your models here.
+# Create your models here
 
 
 class Destinos(models.Model):
