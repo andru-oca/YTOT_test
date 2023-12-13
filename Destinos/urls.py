@@ -24,6 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('docs/', include_docs_urls(title='API Doc')),
-] 
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
